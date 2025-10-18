@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+    <link rel="icon" href="assets/images/favicon.png" type="image/webp">
+    <title>Linktree template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Snowfall Background Animation -->
+    <section class="animated-background">
+        <div id="stars1"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+    <!-- End of Snowfall Background Animation -->
+
+    <div class="min-h-full flex-h-center" id="background_div">
+        <input type="hidden" value="https://bio.link" id="app-url">
+        <input type="hidden" value="null" id="is-featured">
+        <canvas id="bg-canvas" class="background-overlay"></canvas>
+        </input>
+        </input>
+
+        <div class="mt-48 page-full-wrap relative ">
+            <input type="hidden" value="creator-page" id="page-type">
+            <img class="display-image m-auto" data-src="assets/images/logo.png" src="assets/images/logo.png"
+                alt="[Your photo alt]" />
+            <h2 class="page-title page-text-color page-text-font mt-16 text-center">Casa de Adoración</h2>
+
+            <div class="mt-24">
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <a target="_blank" class="page-item-each py-10 flex-both-center"
+                        href="https://www.instagram.com/casadeadoraciontalca" data-id="261652" data-type="page_item">
+                        <i class="bi bi-instagram"></i>
+                        <span class=" item-title text-center">@casadeadoraciontalca</span>
+                    </a>
+                </div>
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <a target="_blank" class="page-item-each py-10 flex-both-center"
+                        href="https://open.spotify.com/show/2olWcS5y7ZGKeGdtpSriRN?si=a65140754e5b4968" data-id="261685"
+                        data-type="page_item">
+                        <i class="bi bi-spotify"></i>
+                        <span class=" item-title text-center">Escuchar podcast CDA</span>
+                    </a>
+                </div>
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <a target="_blank" class="page-item-each py-10 flex-both-center"
+                        href="https://www.youtube.com/@casaadoraciontalca" data-id="261685" data-type="page_item">
+                        <i class="bi bi-youtube"></i>
+                        <span class=" item-title text-center">Visita nuestro canal CDA</span>
+                    </a>
+                </div>
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <a target="_blank" class="page-item-each py-10 flex-both-center"
+                        href="https://www.icasadeadoracion.com/" data-id="261685" data-type="page_item">
+                        <i class="bi bi-globe2"></i>
+                        <span class=" item-title text-center">Visita sitio web oficial</span>
+                    </a>
+                </div>
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <a target="_blank" class="page-item-each py-10 flex-both-center" href="./assets/docs/Leccion 5Primer mandamiento 1er fundamento 2.pdf" data-id="261685"
+                        data-type="page_item">
+                        <i class="bi bi-cloud-download"></i>
+                        <span class=" item-title text-center">Ver documento dicipulado</span>
+                    </a>
+                </div>
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <button type="button" class="page-item-each py-10 flex-both-center" data-bs-toggle="modal"
+                        data-bs-target="#ofrendaModal" data-id="261685" data-type="page_item">
+                        <i class="bi bi-heart"></i>
+                        <span class=" item-title text-center">Diezmos / Ofrendas</span>
+                    </button>
+                </div>
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <button type="button" class="page-item-each py-10 flex-both-center" data-bs-toggle="modal"
+                        data-bs-target="#ruteModal" data-id="261685" data-type="page_item">
+                        <i class="bi bi-map"></i>
+                        <span class=" item-title text-center">Cómo llegar a CDA</span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!--
+    A different snowfall    
+    <script  src="assets/js/snowfall.js"></script>
+    -->
+
+<!-- Modal -->
+<div class="modal fade" id="ruteModal" tabindex="-1" aria-labelledby="ruteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="">
+                    <div class="d-flex gap-3">
+                        <div class="page-item-wrap relative">
+                            <div class="page-item flex-both-center absolute"></div>
+                            <a target="_blank" class="page-item-each py-10 flex-both-center" href="https://waze.com/ul?ll=-35.429911,-71.650520&navigate=yes"
+                                data-id="261685" data-type="page_item">
+                                <i class="fa-brands fa-waze"></i>
+                                <span class=" item-title text-center">LLegar por Waze</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <div class="page-item-wrap relative">
+                            <div class="page-item flex-both-center absolute"></div>
+                            <a target="_blank" class="page-item-each py-10 flex-both-center" href="https://www.google.com/maps/dir/?api=1&destination=-35.429911,-71.650520"
+                                data-id="261685" data-type="page_item">
+                                <i class="bi bi-google"></i>
+                                <span class=" item-title text-center">Llegar por Google</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="ofrendaModal" tabindex="-1" aria-labelledby="ofrendaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="inner_container_oo">
+  
+            <!-- OFRENDAS -->
+            <div class="item">
+              <h3>Ofrendas</h3>
+              <p>Datos para transferencia:</p>
+              <div class="inner-copy" id="datosOfrenda">
+                <p><strong>Banco Scotiabank</strong></p>
+                <p><strong>Nombre: </strong>Felipe Ignacio Monrroy</p>
+                <p><strong>Rut: </strong>18.418.479-6</p>
+                <p><strong>N° Cuenta: </strong> 987604875</p>
+                <p><strong>Tipo de cuenta: </strong> Cuenta Corriente</p>
+                <p><strong>Correo: </strong> talca@icasadeadoración.com</p>
+              </div>
+              <button class="btn-copy mt-1" onclick="copiarDatos('datosOfrenda')"><i class="bi bi-copy"></i> Copiar Ofrenda</button>
+            </div>
+  
+            <!-- DIEZMOS -->
+            <div class="item mt-4">
+              <h3>Diezmos</h3>
+              <p>Datos para transferencia:</p>
+              <div class="inner-copy" id="datosDiezmo">
+                <p><strong>Banco Santander</strong></p>
+                <p><strong>Nombre: </strong>Judah SpA</p>
+                <p><strong>Rut: </strong>77.211.864-3</p>
+                <p><strong>N° Cuenta: </strong> 000080718829</p>
+                <p><strong>Tipo de cuenta: </strong> Cuenta Corriente</p>
+                <p><strong>Correo: </strong> talca@icasadeadoración.com</p>
+              </div>
+              <button class="btn-copy mt-1" onclick="copiarDatos('datosDiezmo')"><i class="bi bi-copy"></i> Copiar Diezmo</button>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Script para copiar -->
+  <script>
+  function copiarDatos(id) {
+    const elemento = document.getElementById(id);
+    const texto = elemento.innerText;
+  
+    navigator.clipboard.writeText(texto).then(() => {
+      alert("Datos copiados correctamente.");
+    }).catch(err => {
+      console.error("Error al copiar: ", err);
+    });
+  }
+  </script>
+  
+
+</html>
